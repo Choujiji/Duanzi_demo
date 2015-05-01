@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047A4EC31AF03E58008CEFA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4EC21AF03E58008CEFA4 /* main.m */; };
+		047A4EC61AF03E58008CEFA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4EC51AF03E58008CEFA4 /* AppDelegate.m */; };
+		047A4ECE1AF03E58008CEFA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047A4ECD1AF03E58008CEFA4 /* Images.xcassets */; };
+		047A4ED11AF03E58008CEFA4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4ECF1AF03E58008CEFA4 /* LaunchScreen.xib */; };
+		047A4EDD1AF03E58008CEFA4 /* DuanziTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4EDC1AF03E58008CEFA4 /* DuanziTests.m */; };
+		047A4EE71AF03FB6008CEFA4 /* DuanziContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A4EE61AF03FB6008CEFA4 /* DuanziContent.json */; };
+		047A4EF41AF0673E008CEFA4 /* DuanziContentLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4EF31AF0673E008CEFA4 /* DuanziContentLoader.m */; };
+		047A4EF71AF0A20C008CEFA4 /* Duanzi.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4EF61AF0A20C008CEFA4 /* Duanzi.m */; };
+		047A4EFA1AF0A233008CEFA4 /* MyDuanzi.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4EF91AF0A233008CEFA4 /* MyDuanzi.m */; };
+		047A4F011AF0D42A008CEFA4 /* DuanziListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4EFF1AF0D42A008CEFA4 /* DuanziListViewController.m */; };
+		047A4F021AF0D42A008CEFA4 /* DuanziListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F001AF0D42A008CEFA4 /* DuanziListViewController.xib */; };
+		047A4F061AF0D444008CEFA4 /* DuanziSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F041AF0D444008CEFA4 /* DuanziSettingViewController.m */; };
+		047A4F071AF0D444008CEFA4 /* DuanziSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F051AF0D444008CEFA4 /* DuanziSettingViewController.xib */; };
+		047A4F0B1AF0D45F008CEFA4 /* DuanziCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F091AF0D45F008CEFA4 /* DuanziCreateViewController.m */; };
+		047A4F0C1AF0D45F008CEFA4 /* DuanziCreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F0A1AF0D45F008CEFA4 /* DuanziCreateViewController.xib */; };
+		047A4F101AF0D474008CEFA4 /* DuanziSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F0E1AF0D474008CEFA4 /* DuanziSearchViewController.m */; };
+		047A4F111AF0D474008CEFA4 /* DuanziSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F0F1AF0D474008CEFA4 /* DuanziSearchViewController.xib */; };
+		047A4F171AF10608008CEFA4 /* DefaultDuanziTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F151AF10608008CEFA4 /* DefaultDuanziTableViewCell.m */; };
+		047A4F181AF10608008CEFA4 /* DefaultDuanziTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F161AF10608008CEFA4 /* DefaultDuanziTableViewCell.xib */; };
+		047A4F1C1AF10619008CEFA4 /* MyDuanziTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F1A1AF10619008CEFA4 /* MyDuanziTableViewCell.m */; };
+		047A4F1D1AF10619008CEFA4 /* MyDuanziTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F1B1AF10619008CEFA4 /* MyDuanziTableViewCell.xib */; };
+		047A4F221AF115F4008CEFA4 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F201AF115F4008CEFA4 /* SettingTableViewCell.m */; };
+		047A4F231AF115F4008CEFA4 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F211AF115F4008CEFA4 /* SettingTableViewCell.xib */; };
+		047A4F291AF1B6ED008CEFA4 /* MyDuanziListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F271AF1B6ED008CEFA4 /* MyDuanziListViewController.m */; };
+		047A4F2A1AF1B6ED008CEFA4 /* MyDuanziListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F281AF1B6ED008CEFA4 /* MyDuanziListViewController.xib */; };
+		047A4F2E1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F2C1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.m */; };
+		047A4F2F1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F2D1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.xib */; };
+		047A4F321AF2170F008CEFA4 /* DuanziCommDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F311AF2170F008CEFA4 /* DuanziCommDataManager.m */; };
+		56CE654260E6BBE0FEE1B8D5 /* libPods-Duanzi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC292B438B71C2CC0EE28854 /* libPods-Duanzi.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		047A4ED71AF03E58008CEFA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 047A4EB51AF03E57008CEFA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047A4EBC1AF03E57008CEFA4;
+			remoteInfo = Duanzi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		047A4EBD1AF03E58008CEFA4 /* Duanzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duanzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047A4EC11AF03E58008CEFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047A4EC21AF03E58008CEFA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		047A4EC41AF03E58008CEFA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		047A4EC51AF03E58008CEFA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		047A4ECD1AF03E58008CEFA4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		047A4ED01AF03E58008CEFA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		047A4ED61AF03E58008CEFA4 /* DuanziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuanziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		047A4EDB1AF03E58008CEFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047A4EDC1AF03E58008CEFA4 /* DuanziTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuanziTests.m; sourceTree = "<group>"; };
+		047A4EE61AF03FB6008CEFA4 /* DuanziContent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DuanziContent.json; sourceTree = "<group>"; };
+		047A4EE81AF04D69008CEFA4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		047A4EF21AF0673E008CEFA4 /* DuanziContentLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuanziContentLoader.h; sourceTree = "<group>"; };
+		047A4EF31AF0673E008CEFA4 /* DuanziContentLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuanziContentLoader.m; sourceTree = "<group>"; };
+		047A4EF51AF0A20C008CEFA4 /* Duanzi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Duanzi.h; sourceTree = "<group>"; };
+		047A4EF61AF0A20C008CEFA4 /* Duanzi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Duanzi.m; sourceTree = "<group>"; };
+		047A4EF81AF0A233008CEFA4 /* MyDuanzi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDuanzi.h; sourceTree = "<group>"; };
+		047A4EF91AF0A233008CEFA4 /* MyDuanzi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDuanzi.m; sourceTree = "<group>"; };
+		047A4EFE1AF0D42A008CEFA4 /* DuanziListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuanziListViewController.h; sourceTree = "<group>"; };
+		047A4EFF1AF0D42A008CEFA4 /* DuanziListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuanziListViewController.m; sourceTree = "<group>"; };
+		047A4F001AF0D42A008CEFA4 /* DuanziListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DuanziListViewController.xib; sourceTree = "<group>"; };
+		047A4F031AF0D444008CEFA4 /* DuanziSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuanziSettingViewController.h; sourceTree = "<group>"; };
+		047A4F041AF0D444008CEFA4 /* DuanziSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuanziSettingViewController.m; sourceTree = "<group>"; };
+		047A4F051AF0D444008CEFA4 /* DuanziSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DuanziSettingViewController.xib; sourceTree = "<group>"; };
+		047A4F081AF0D45F008CEFA4 /* DuanziCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuanziCreateViewController.h; sourceTree = "<group>"; };
+		047A4F091AF0D45F008CEFA4 /* DuanziCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuanziCreateViewController.m; sourceTree = "<group>"; };
+		047A4F0A1AF0D45F008CEFA4 /* DuanziCreateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DuanziCreateViewController.xib; sourceTree = "<group>"; };
+		047A4F0D1AF0D474008CEFA4 /* DuanziSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuanziSearchViewController.h; sourceTree = "<group>"; };
+		047A4F0E1AF0D474008CEFA4 /* DuanziSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuanziSearchViewController.m; sourceTree = "<group>"; };
+		047A4F0F1AF0D474008CEFA4 /* DuanziSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DuanziSearchViewController.xib; sourceTree = "<group>"; };
+		047A4F141AF10608008CEFA4 /* DefaultDuanziTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultDuanziTableViewCell.h; sourceTree = "<group>"; };
+		047A4F151AF10608008CEFA4 /* DefaultDuanziTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultDuanziTableViewCell.m; sourceTree = "<group>"; };
+		047A4F161AF10608008CEFA4 /* DefaultDuanziTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultDuanziTableViewCell.xib; sourceTree = "<group>"; };
+		047A4F191AF10619008CEFA4 /* MyDuanziTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDuanziTableViewCell.h; sourceTree = "<group>"; };
+		047A4F1A1AF10619008CEFA4 /* MyDuanziTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDuanziTableViewCell.m; sourceTree = "<group>"; };
+		047A4F1B1AF10619008CEFA4 /* MyDuanziTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDuanziTableViewCell.xib; sourceTree = "<group>"; };
+		047A4F1F1AF115F4008CEFA4 /* SettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		047A4F201AF115F4008CEFA4 /* SettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		047A4F211AF115F4008CEFA4 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		047A4F261AF1B6ED008CEFA4 /* MyDuanziListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDuanziListViewController.h; sourceTree = "<group>"; };
+		047A4F271AF1B6ED008CEFA4 /* MyDuanziListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDuanziListViewController.m; sourceTree = "<group>"; };
+		047A4F281AF1B6ED008CEFA4 /* MyDuanziListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDuanziListViewController.xib; sourceTree = "<group>"; };
+		047A4F2B1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteDuanziListViewController.h; sourceTree = "<group>"; };
+		047A4F2C1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteDuanziListViewController.m; sourceTree = "<group>"; };
+		047A4F2D1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouriteDuanziListViewController.xib; sourceTree = "<group>"; };
+		047A4F301AF2170F008CEFA4 /* DuanziCommDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuanziCommDataManager.h; sourceTree = "<group>"; };
+		047A4F311AF2170F008CEFA4 /* DuanziCommDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuanziCommDataManager.m; sourceTree = "<group>"; };
+		168AFDD26A13D0479A1F08B0 /* Pods-Duanzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duanzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Duanzi/Pods-Duanzi.release.xcconfig"; sourceTree = "<group>"; };
+		516E66BD2CF3C7A805D936E2 /* Pods-Duanzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duanzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Duanzi/Pods-Duanzi.debug.xcconfig"; sourceTree = "<group>"; };
+		FC292B438B71C2CC0EE28854 /* libPods-Duanzi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Duanzi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047A4EBA1AF03E57008CEFA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CE654260E6BBE0FEE1B8D5 /* libPods-Duanzi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047A4ED31AF03E58008CEFA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047A4EB41AF03E57008CEFA4 = {
+			isa = PBXGroup;
+			children = (
+				047A4EBF1AF03E58008CEFA4 /* Duanzi */,
+				047A4ED91AF03E58008CEFA4 /* DuanziTests */,
+				047A4EBE1AF03E58008CEFA4 /* Products */,
+				E39428CCDBAE3CCAB4A6CF9E /* Pods */,
+				9F899DA3C5EC597E15B8E8FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		047A4EBE1AF03E58008CEFA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047A4EBD1AF03E58008CEFA4 /* Duanzi.app */,
+				047A4ED61AF03E58008CEFA4 /* DuanziTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		047A4EBF1AF03E58008CEFA4 /* Duanzi */ = {
+			isa = PBXGroup;
+			children = (
+				047A4EC41AF03E58008CEFA4 /* AppDelegate.h */,
+				047A4EC51AF03E58008CEFA4 /* AppDelegate.m */,
+				047A4F131AF0D4AD008CEFA4 /* DataModel */,
+				047A4F121AF0D486008CEFA4 /* ViewController */,
+				047A4F1E1AF10622008CEFA4 /* Cell */,
+				047A4ECD1AF03E58008CEFA4 /* Images.xcassets */,
+				047A4ECF1AF03E58008CEFA4 /* LaunchScreen.xib */,
+				047A4EC01AF03E58008CEFA4 /* Supporting Files */,
+				047A4EE61AF03FB6008CEFA4 /* DuanziContent.json */,
+			);
+			path = Duanzi;
+			sourceTree = "<group>";
+		};
+		047A4EC01AF03E58008CEFA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				047A4EC11AF03E58008CEFA4 /* Info.plist */,
+				047A4EC21AF03E58008CEFA4 /* main.m */,
+				047A4EE81AF04D69008CEFA4 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		047A4ED91AF03E58008CEFA4 /* DuanziTests */ = {
+			isa = PBXGroup;
+			children = (
+				047A4EDC1AF03E58008CEFA4 /* DuanziTests.m */,
+				047A4EDA1AF03E58008CEFA4 /* Supporting Files */,
+			);
+			path = DuanziTests;
+			sourceTree = "<group>";
+		};
+		047A4EDA1AF03E58008CEFA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				047A4EDB1AF03E58008CEFA4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		047A4F121AF0D486008CEFA4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				047A4F241AF1B6AB008CEFA4 /* MainModule */,
+				047A4F251AF1B6BD008CEFA4 /* Setting */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		047A4F131AF0D4AD008CEFA4 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				047A4F301AF2170F008CEFA4 /* DuanziCommDataManager.h */,
+				047A4F311AF2170F008CEFA4 /* DuanziCommDataManager.m */,
+				047A4EF21AF0673E008CEFA4 /* DuanziContentLoader.h */,
+				047A4EF31AF0673E008CEFA4 /* DuanziContentLoader.m */,
+				047A4EF51AF0A20C008CEFA4 /* Duanzi.h */,
+				047A4EF61AF0A20C008CEFA4 /* Duanzi.m */,
+				047A4EF81AF0A233008CEFA4 /* MyDuanzi.h */,
+				047A4EF91AF0A233008CEFA4 /* MyDuanzi.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		047A4F1E1AF10622008CEFA4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				047A4F141AF10608008CEFA4 /* DefaultDuanziTableViewCell.h */,
+				047A4F151AF10608008CEFA4 /* DefaultDuanziTableViewCell.m */,
+				047A4F161AF10608008CEFA4 /* DefaultDuanziTableViewCell.xib */,
+				047A4F191AF10619008CEFA4 /* MyDuanziTableViewCell.h */,
+				047A4F1A1AF10619008CEFA4 /* MyDuanziTableViewCell.m */,
+				047A4F1B1AF10619008CEFA4 /* MyDuanziTableViewCell.xib */,
+				047A4F1F1AF115F4008CEFA4 /* SettingTableViewCell.h */,
+				047A4F201AF115F4008CEFA4 /* SettingTableViewCell.m */,
+				047A4F211AF115F4008CEFA4 /* SettingTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		047A4F241AF1B6AB008CEFA4 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				047A4EFE1AF0D42A008CEFA4 /* DuanziListViewController.h */,
+				047A4EFF1AF0D42A008CEFA4 /* DuanziListViewController.m */,
+				047A4F001AF0D42A008CEFA4 /* DuanziListViewController.xib */,
+				047A4F031AF0D444008CEFA4 /* DuanziSettingViewController.h */,
+				047A4F041AF0D444008CEFA4 /* DuanziSettingViewController.m */,
+				047A4F051AF0D444008CEFA4 /* DuanziSettingViewController.xib */,
+				047A4F081AF0D45F008CEFA4 /* DuanziCreateViewController.h */,
+				047A4F091AF0D45F008CEFA4 /* DuanziCreateViewController.m */,
+				047A4F0A1AF0D45F008CEFA4 /* DuanziCreateViewController.xib */,
+				047A4F0D1AF0D474008CEFA4 /* DuanziSearchViewController.h */,
+				047A4F0E1AF0D474008CEFA4 /* DuanziSearchViewController.m */,
+				047A4F0F1AF0D474008CEFA4 /* DuanziSearchViewController.xib */,
+			);
+			name = MainModule;
+			sourceTree = "<group>";
+		};
+		047A4F251AF1B6BD008CEFA4 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				047A4F261AF1B6ED008CEFA4 /* MyDuanziListViewController.h */,
+				047A4F271AF1B6ED008CEFA4 /* MyDuanziListViewController.m */,
+				047A4F281AF1B6ED008CEFA4 /* MyDuanziListViewController.xib */,
+				047A4F2B1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.h */,
+				047A4F2C1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.m */,
+				047A4F2D1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		9F899DA3C5EC597E15B8E8FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC292B438B71C2CC0EE28854 /* libPods-Duanzi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E39428CCDBAE3CCAB4A6CF9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				516E66BD2CF3C7A805D936E2 /* Pods-Duanzi.debug.xcconfig */,
+				168AFDD26A13D0479A1F08B0 /* Pods-Duanzi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		047A4EBC1AF03E57008CEFA4 /* Duanzi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047A4EE01AF03E58008CEFA4 /* Build configuration list for PBXNativeTarget "Duanzi" */;
+			buildPhases = (
+				3510AA03C1978199C07D3DE5 /* Check Pods Manifest.lock */,
+				047A4EB91AF03E57008CEFA4 /* Sources */,
+				047A4EBA1AF03E57008CEFA4 /* Frameworks */,
+				047A4EBB1AF03E57008CEFA4 /* Resources */,
+				E744519746566024A741DDFE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Duanzi;
+			productName = Duanzi;
+			productReference = 047A4EBD1AF03E58008CEFA4 /* Duanzi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		047A4ED51AF03E58008CEFA4 /* DuanziTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047A4EE31AF03E58008CEFA4 /* Build configuration list for PBXNativeTarget "DuanziTests" */;
+			buildPhases = (
+				047A4ED21AF03E58008CEFA4 /* Sources */,
+				047A4ED31AF03E58008CEFA4 /* Frameworks */,
+				047A4ED41AF03E58008CEFA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047A4ED81AF03E58008CEFA4 /* PBXTargetDependency */,
+			);
+			name = DuanziTests;
+			productName = DuanziTests;
+			productReference = 047A4ED61AF03E58008CEFA4 /* DuanziTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		047A4EB51AF03E57008CEFA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = jiji;
+				TargetAttributes = {
+					047A4EBC1AF03E57008CEFA4 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					047A4ED51AF03E58008CEFA4 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 047A4EBC1AF03E57008CEFA4;
+					};
+				};
+			};
+			buildConfigurationList = 047A4EB81AF03E57008CEFA4 /* Build configuration list for PBXProject "Duanzi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 047A4EB41AF03E57008CEFA4;
+			productRefGroup = 047A4EBE1AF03E58008CEFA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				047A4EBC1AF03E57008CEFA4 /* Duanzi */,
+				047A4ED51AF03E58008CEFA4 /* DuanziTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047A4EBB1AF03E57008CEFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047A4F2A1AF1B6ED008CEFA4 /* MyDuanziListViewController.xib in Resources */,
+				047A4F2F1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.xib in Resources */,
+				047A4ED11AF03E58008CEFA4 /* LaunchScreen.xib in Resources */,
+				047A4ECE1AF03E58008CEFA4 /* Images.xcassets in Resources */,
+				047A4F181AF10608008CEFA4 /* DefaultDuanziTableViewCell.xib in Resources */,
+				047A4EE71AF03FB6008CEFA4 /* DuanziContent.json in Resources */,
+				047A4F021AF0D42A008CEFA4 /* DuanziListViewController.xib in Resources */,
+				047A4F1D1AF10619008CEFA4 /* MyDuanziTableViewCell.xib in Resources */,
+				047A4F111AF0D474008CEFA4 /* DuanziSearchViewController.xib in Resources */,
+				047A4F071AF0D444008CEFA4 /* DuanziSettingViewController.xib in Resources */,
+				047A4F231AF115F4008CEFA4 /* SettingTableViewCell.xib in Resources */,
+				047A4F0C1AF0D45F008CEFA4 /* DuanziCreateViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047A4ED41AF03E58008CEFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3510AA03C1978199C07D3DE5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E744519746566024A741DDFE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Duanzi/Pods-Duanzi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		047A4EB91AF03E57008CEFA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047A4F171AF10608008CEFA4 /* DefaultDuanziTableViewCell.m in Sources */,
+				047A4F061AF0D444008CEFA4 /* DuanziSettingViewController.m in Sources */,
+				047A4F221AF115F4008CEFA4 /* SettingTableViewCell.m in Sources */,
+				047A4F1C1AF10619008CEFA4 /* MyDuanziTableViewCell.m in Sources */,
+				047A4EFA1AF0A233008CEFA4 /* MyDuanzi.m in Sources */,
+				047A4EC61AF03E58008CEFA4 /* AppDelegate.m in Sources */,
+				047A4F011AF0D42A008CEFA4 /* DuanziListViewController.m in Sources */,
+				047A4EF41AF0673E008CEFA4 /* DuanziContentLoader.m in Sources */,
+				047A4F0B1AF0D45F008CEFA4 /* DuanziCreateViewController.m in Sources */,
+				047A4F2E1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.m in Sources */,
+				047A4EC31AF03E58008CEFA4 /* main.m in Sources */,
+				047A4F321AF2170F008CEFA4 /* DuanziCommDataManager.m in Sources */,
+				047A4EF71AF0A20C008CEFA4 /* Duanzi.m in Sources */,
+				047A4F291AF1B6ED008CEFA4 /* MyDuanziListViewController.m in Sources */,
+				047A4F101AF0D474008CEFA4 /* DuanziSearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047A4ED21AF03E58008CEFA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047A4EDD1AF03E58008CEFA4 /* DuanziTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		047A4ED81AF03E58008CEFA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047A4EBC1AF03E57008CEFA4 /* Duanzi */;
+			targetProxy = 047A4ED71AF03E58008CEFA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		047A4ECF1AF03E58008CEFA4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047A4ED01AF03E58008CEFA4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		047A4EDE1AF03E58008CEFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		047A4EDF1AF03E58008CEFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		047A4EE11AF03E58008CEFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516E66BD2CF3C7A805D936E2 /* Pods-Duanzi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Duanzi/PrefixHeader.pch;
+				INFOPLIST_FILE = Duanzi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		047A4EE21AF03E58008CEFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168AFDD26A13D0479A1F08B0 /* Pods-Duanzi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Duanzi/PrefixHeader.pch;
+				INFOPLIST_FILE = Duanzi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		047A4EE41AF03E58008CEFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DuanziTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duanzi.app/Duanzi";
+			};
+			name = Debug;
+		};
+		047A4EE51AF03E58008CEFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DuanziTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duanzi.app/Duanzi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		047A4EB81AF03E57008CEFA4 /* Build configuration list for PBXProject "Duanzi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047A4EDE1AF03E58008CEFA4 /* Debug */,
+				047A4EDF1AF03E58008CEFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047A4EE01AF03E58008CEFA4 /* Build configuration list for PBXNativeTarget "Duanzi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047A4EE11AF03E58008CEFA4 /* Debug */,
+				047A4EE21AF03E58008CEFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047A4EE31AF03E58008CEFA4 /* Build configuration list for PBXNativeTarget "DuanziTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047A4EE41AF03E58008CEFA4 /* Debug */,
+				047A4EE51AF03E58008CEFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 047A4EB51AF03E57008CEFA4 /* Project object */;
+}

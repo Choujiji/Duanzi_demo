@@ -1,0 +1,10 @@
+platform :ios, '7.0'
+
+target 'Duanzi' do
+
+pod 'FMDB', '~> 2.5'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'MBProgressHUD', '~> 0.9.1'
+
+end
+

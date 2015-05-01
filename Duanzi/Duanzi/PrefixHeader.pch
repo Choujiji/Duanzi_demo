@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  Duanzi
+//
+//  Created by mac on 15/4/29.
+//  Copyright (c) 2015年 jiji. All rights reserved.
+//
+
+#ifndef Duanzi_PrefixHeader_pch
+#define Duanzi_PrefixHeader_pch
+
+#import <FMDB/FMDB.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "AppDelegate.h"
+#import "DuanziContentLoader.h"//段子数据存取类
+#import "Duanzi.h"
+#import "MyDuanzi.h"
+#import "DuanziCommDataManager.h"
+
+#define LCD_W ([UIScreen mainScreen].bounds.size.width)
+#define LCD_H ([UIScreen mainScreen].bounds.size.height)
+
+/**
+ *  段子草稿保存key
+ */
+#define Duanzi_Draft_SaveKey    @"draftSaveKey"
+
+/**
+ *  搜索历史key
+ */
+#define Duanzi_SearchHistory_Key @"SearchHistory"
+
+#endif

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C2513" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DefaultDuanziTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LJ-IR-CGh">
+                        <rect key="frame" x="16" y="8" width="288" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLp-Xb-Rku">
+                        <rect key="frame" x="16" y="40" width="40" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="赞">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5l-WR-SuX">
+                        <rect key="frame" x="78" y="40" width="40" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="踩">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb2-sO-FQq">
+                        <rect key="frame" x="154" y="40" width="40" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="收藏">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sLp-Xb-Rku" firstAttribute="top" secondItem="2LJ-IR-CGh" secondAttribute="bottom" constant="-1" id="6Po-nQ-xmb"/>
+                    <constraint firstItem="Mb2-sO-FQq" firstAttribute="leading" secondItem="S5l-WR-SuX" secondAttribute="trailing" constant="36" id="9dw-3p-ZW5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2LJ-IR-CGh" secondAttribute="trailing" constant="8" id="Hz1-0w-RzD"/>
+                    <constraint firstItem="2LJ-IR-CGh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Ohf-GO-bCl"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Mb2-sO-FQq" secondAttribute="bottom" constant="-8" id="PLu-57-xRd"/>
+                    <constraint firstItem="S5l-WR-SuX" firstAttribute="top" secondItem="Mb2-sO-FQq" secondAttribute="top" id="QgB-1h-KA0"/>
+                    <constraint firstItem="2LJ-IR-CGh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="UI7-cy-8TD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sLp-Xb-Rku" secondAttribute="bottom" constant="-8" id="V7W-5G-GbF"/>
+                    <constraint firstItem="S5l-WR-SuX" firstAttribute="leading" secondItem="sLp-Xb-Rku" secondAttribute="trailing" constant="22" id="XIo-aQ-EOI"/>
+                    <constraint firstAttribute="trailing" secondItem="Mb2-sO-FQq" secondAttribute="trailing" constant="126" id="idI-Q8-kzd"/>
+                    <constraint firstItem="S5l-WR-SuX" firstAttribute="top" secondItem="sLp-Xb-Rku" secondAttribute="top" id="jNf-qI-WHr"/>
+                    <constraint firstItem="sLp-Xb-Rku" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="rzk-B2-JPk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="S5l-WR-SuX" secondAttribute="bottom" constant="-8" id="xff-VR-KLV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="2LJ-IR-CGh" id="QJa-Z8-LeT"/>
+                <outlet property="dislikeButton" destination="S5l-WR-SuX" id="m7D-Rv-OAn"/>
+                <outlet property="favouriteButton" destination="Mb2-sO-FQq" id="Sjw-09-Vc8"/>
+                <outlet property="likeButton" destination="sLp-Xb-Rku" id="fZU-gK-HxM"/>
+            </connections>
+            <point key="canvasLocation" x="266" y="225"/>
+        </tableViewCell>
+    </objects>
+</document>

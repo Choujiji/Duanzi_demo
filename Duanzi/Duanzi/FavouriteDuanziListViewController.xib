@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C2513" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavouriteDuanziListViewController">
+            <connections>
+                <outlet property="tableView" destination="RBy-nv-mnj" id="x7A-LA-eMX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RBy-nv-mnj">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RBy-nv-mnj" secondAttribute="bottom" id="5pG-qY-Rr9"/>
+                <constraint firstItem="RBy-nv-mnj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OJs-SZ-KsS"/>
+                <constraint firstItem="RBy-nv-mnj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cUt-nN-HrZ">
+                    <variation key="heightClass=regular-widthClass=compact" constant="64"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="RBy-nv-mnj" secondAttribute="trailing" id="qJq-fS-reL"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="RBy-nv-mnj"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="5pG-qY-Rr9"/>
+                    <exclude reference="OJs-SZ-KsS"/>
+                    <exclude reference="cUt-nN-HrZ"/>
+                    <exclude reference="qJq-fS-reL"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="RBy-nv-mnj"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="5pG-qY-Rr9"/>
+                    <include reference="OJs-SZ-KsS"/>
+                    <include reference="cUt-nN-HrZ"/>
+                    <include reference="qJq-fS-reL"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="271" y="300"/>
+        </view>
+    </objects>
+</document>
