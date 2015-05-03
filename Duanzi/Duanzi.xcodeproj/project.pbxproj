@@ -35,6 +35,7 @@
 		047A4F2E1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F2C1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.m */; };
 		047A4F2F1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F2D1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.xib */; };
 		047A4F321AF2170F008CEFA4 /* DuanziCommDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F311AF2170F008CEFA4 /* DuanziCommDataManager.m */; };
+		04CDBE261AF6CC08002664FA /* DZLoadResultTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDBE251AF6CC08002664FA /* DZLoadResultTableView.m */; };
 		56CE654260E6BBE0FEE1B8D5 /* libPods-Duanzi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC292B438B71C2CC0EE28854 /* libPods-Duanzi.a */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,8 @@
 		047A4F2D1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouriteDuanziListViewController.xib; sourceTree = "<group>"; };
 		047A4F301AF2170F008CEFA4 /* DuanziCommDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuanziCommDataManager.h; sourceTree = "<group>"; };
 		047A4F311AF2170F008CEFA4 /* DuanziCommDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuanziCommDataManager.m; sourceTree = "<group>"; };
+		04CDBE241AF6CC08002664FA /* DZLoadResultTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZLoadResultTableView.h; sourceTree = "<group>"; };
+		04CDBE251AF6CC08002664FA /* DZLoadResultTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZLoadResultTableView.m; sourceTree = "<group>"; };
 		168AFDD26A13D0479A1F08B0 /* Pods-Duanzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duanzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Duanzi/Pods-Duanzi.release.xcconfig"; sourceTree = "<group>"; };
 		516E66BD2CF3C7A805D936E2 /* Pods-Duanzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duanzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Duanzi/Pods-Duanzi.debug.xcconfig"; sourceTree = "<group>"; };
 		FC292B438B71C2CC0EE28854 /* libPods-Duanzi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Duanzi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +148,8 @@
 			children = (
 				047A4EC41AF03E58008CEFA4 /* AppDelegate.h */,
 				047A4EC51AF03E58008CEFA4 /* AppDelegate.m */,
+				04CDBE241AF6CC08002664FA /* DZLoadResultTableView.h */,
+				04CDBE251AF6CC08002664FA /* DZLoadResultTableView.m */,
 				047A4F131AF0D4AD008CEFA4 /* DataModel */,
 				047A4F121AF0D486008CEFA4 /* ViewController */,
 				047A4F1E1AF10622008CEFA4 /* Cell */,
@@ -418,6 +423,7 @@
 			files = (
 				047A4F171AF10608008CEFA4 /* DefaultDuanziTableViewCell.m in Sources */,
 				047A4F061AF0D444008CEFA4 /* DuanziSettingViewController.m in Sources */,
+				04CDBE261AF6CC08002664FA /* DZLoadResultTableView.m in Sources */,
 				047A4F221AF115F4008CEFA4 /* SettingTableViewCell.m in Sources */,
 				047A4F1C1AF10619008CEFA4 /* MyDuanziTableViewCell.m in Sources */,
 				047A4EFA1AF0A233008CEFA4 /* MyDuanzi.m in Sources */,

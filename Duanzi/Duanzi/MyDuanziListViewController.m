@@ -8,11 +8,12 @@
 
 #import "MyDuanziListViewController.h"
 #import "MyDuanziTableViewCell.h"
+#import "DZLoadResultTableView.h"
 
 static NSDateFormatter *dateFormatter = nil;
 
 @interface MyDuanziListViewController () <UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet DZLoadResultTableView *tableView;
 
 
 /**
@@ -63,6 +64,10 @@ static NSDateFormatter *dateFormatter = nil;
             self.tableView.delegate = self;
             self.tableView.dataSource = self;
             [self.tableView reloadData];
+        }
+        else
+        {
+            [self.tableView showLoadResultViewWithText:@"您还没有创造段子，赶快开始吧~~"];
         }
     }];
 }
@@ -116,6 +121,11 @@ static NSDateFormatter *dateFormatter = nil;
         
         //存储数据
         [[DuanziContentLoader duanziLoader] deleteMyDuanzi:self.delDuanzi];
+        
+        if (self.resultDataArray.count == 0)
+        {
+            [self.tableView showLoadResultViewWithText:@"您还没有创造段子，赶快开始吧~~"];
+        }
     }
     
     
