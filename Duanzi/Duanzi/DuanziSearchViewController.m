@@ -8,6 +8,7 @@
 
 #import "DuanziSearchViewController.h"
 #import "DefaultDuanziTableViewCell.h"
+#import "DZLoadResultTableView.h"
 
 typedef NS_ENUM(NSUInteger, DuanziSearchList_ShowType) {
     DuanziSearchList_HotKey,//热词搜索
@@ -17,7 +18,7 @@ typedef NS_ENUM(NSUInteger, DuanziSearchList_ShowType) {
 
 @interface DuanziSearchViewController () <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet DZLoadResultTableView *tableView;
 
 
 /**
@@ -214,6 +215,9 @@ typedef NS_ENUM(NSUInteger, DuanziSearchList_ShowType) {
     DuanziContentLoader *duanziManager = [DuanziContentLoader duanziLoader];
     [duanziManager queryDuanziWithKeyString:searchBar.text completion:^(NSArray *resultArray) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
+
+        NSString *searchResult = [NSString stringWithFormat:@"共找到%ld个结果", resultArray.count];
+        [self.tableView showLoadResultViewWithText:searchResult];
 
         if (resultArray.count > 0)
         {

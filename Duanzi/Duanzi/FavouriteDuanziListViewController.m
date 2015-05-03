@@ -8,9 +8,10 @@
 
 #import "FavouriteDuanziListViewController.h"
 #import "DefaultDuanziTableViewCell.h"
+#import "DZLoadResultTableView.h"
 
 @interface FavouriteDuanziListViewController () <UITableViewDelegate, UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet DZLoadResultTableView *tableView;
 
 /**
  *  收藏段子数组
@@ -56,6 +57,10 @@
             self.tableView.delegate = self;
             self.tableView.dataSource = self;
             [self.tableView reloadData];
+        }
+        else
+        {
+            [self.tableView showLoadResultViewWithText:@"您还没有收藏任何段子"];
         }
     }];
 }
@@ -124,6 +129,10 @@
         {
             [self.resultDataArray removeObject:duanzi];
             [self.tableView reloadData];
+            if (self.resultDataArray.count == 0)
+            {
+                [self.tableView showLoadResultViewWithText:@"您还没有收藏任何段子"];
+            }
         }
     };
 
