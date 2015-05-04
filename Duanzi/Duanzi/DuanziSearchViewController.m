@@ -128,7 +128,7 @@ typedef NS_ENUM(NSUInteger, DuanziSearchList_ShowType) {
 - (void)loadSearchHistory
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    self.searchHistoryArray = [userDefaults objectForKey:Duanzi_SearchHistory_Key];
+    self.searchHistoryArray = [[userDefaults objectForKey:Duanzi_SearchHistory_Key] mutableCopy];
     if (!self.searchHistoryArray)
     {
         self.searchHistoryArray = [NSMutableArray new];
@@ -152,7 +152,6 @@ typedef NS_ENUM(NSUInteger, DuanziSearchList_ShowType) {
         }
     }
    
-    
     [self.searchHistoryArray insertObject:searchKey atIndex:0];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:self.searchHistoryArray forKey:Duanzi_SearchHistory_Key];
