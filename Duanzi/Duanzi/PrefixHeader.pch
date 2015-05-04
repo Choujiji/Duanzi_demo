@@ -17,6 +17,7 @@
 #import "Duanzi.h"
 #import "MyDuanzi.h"
 #import "DuanziCommDataManager.h"
+#import "DZDetailViewController.h"
 
 #define LCD_W ([UIScreen mainScreen].bounds.size.width)
 #define LCD_H ([UIScreen mainScreen].bounds.size.height)

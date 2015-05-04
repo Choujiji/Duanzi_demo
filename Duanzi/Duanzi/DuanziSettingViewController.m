@@ -9,6 +9,7 @@
 #import "DuanziSettingViewController.h"
 #import "FavouriteDuanziListViewController.h"
 #import "MyDuanziListViewController.h"
+#import "DZAboutUsViewController.h"
 
 @interface DuanziSettingViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -31,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.settingItemArray = @[@"我的收藏", @"我的段子", @"打分支持", @"关于我们"];
+    self.settingItemArray = @[@"我的收藏", @"我的段子", @"关于我们"];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -45,7 +46,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -57,9 +58,6 @@
             count = 2;
             break;
         case 1:
-            count = 1;
-            break;
-        case 2:
             count = 1;
             break;
             
@@ -89,9 +87,6 @@
         case 1:
             itemTitle = self.settingItemArray[indexPath.row + 2];
             break;
-        case 2:
-            itemTitle = self.settingItemArray[indexPath.row + 3];
-            break;
             
         default:
             itemTitle = @"";
@@ -109,10 +104,10 @@
     
     
     //收藏、段子、反馈、关于
-    
+    UIViewController *vc = nil;
+
     if (indexPath.section == 0)
     {
-        UIViewController *vc = nil;
         if (indexPath.row == 0)//收藏
         {
             vc = [[FavouriteDuanziListViewController alloc] initWithNibName:@"FavouriteDuanziListViewController" bundle:nil];
@@ -122,11 +117,16 @@
             vc = [[MyDuanziListViewController alloc] initWithNibName:@"MyDuanziListViewController" bundle:nil];
         }
         
-        if (vc)
-        {
-            vc.hidesBottomBarWhenPushed = YES;//当指定的vc将要被push进时，自动隐藏bottomBar（由于self的默认为NO，所以返回的时候bottomBar还会在）
-            [self.navigationController pushViewController:vc animated:YES];
-        }
+    }
+    else if (indexPath.section == 1)//关于
+    {
+        vc = [[DZAboutUsViewController alloc] initWithNibName:@"DZAboutUsViewController" bundle:nil];
+    }
+    
+    if (vc)
+    {
+        vc.hidesBottomBarWhenPushed = YES;//当指定的vc将要被push进时，自动隐藏bottomBar（由于self的默认为NO，所以返回的时候bottomBar还会在）
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

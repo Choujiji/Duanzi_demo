@@ -176,6 +176,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    DZDetailViewController *detailVC = [[DZDetailViewController alloc] initWithDuanzi:self.duanziDataArray[indexPath.row]];
+    
+    detailVC.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 - (void)dealloc
