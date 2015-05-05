@@ -85,7 +85,7 @@ static NSDateFormatter *dateFormatter = nil;
     
     cell.contentLabel.text = duanzi.content;
     cell.contentLabel.numberOfLines = 0;
-    cell.contentLabel.preferredMaxLayoutWidth = LCD_W - 8 * 2;
+    cell.contentLabel.preferredMaxLayoutWidth = LCD_W - 16 * 3;
     
     
     if (!dateFormatter)

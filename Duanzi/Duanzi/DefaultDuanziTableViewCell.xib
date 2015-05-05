@@ -69,7 +69,7 @@
                 <outlet property="contentLabel" destination="2LJ-IR-CGh" id="QJa-Z8-LeT"/>
                 <outlet property="favouriteButton" destination="Mb2-sO-FQq" id="Sjw-09-Vc8"/>
             </connections>
-            <point key="canvasLocation" x="266" y="256.5"/>
+            <point key="canvasLocation" x="136" y="213.5"/>
         </tableViewCell>
     </objects>
 </document>

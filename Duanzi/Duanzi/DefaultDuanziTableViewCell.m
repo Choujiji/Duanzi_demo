@@ -62,7 +62,7 @@
 
 - (void)setFavouriteStyle:(BOOL)favourite
 {
-    UIColor *textColor = favourite ? [UIColor yellowColor] : [UIColor lightGrayColor];
+    UIColor *textColor = favourite ? COLOR(209, 157, 0, 1) : [UIColor lightGrayColor];
     
     [self.favouriteButton setTitleColor:textColor forState:UIControlStateNormal];
 }

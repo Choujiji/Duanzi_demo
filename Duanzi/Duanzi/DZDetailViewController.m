@@ -61,7 +61,7 @@
 {
     cell.contentLabel.text = self.duanzi.content;
     cell.contentLabel.numberOfLines = 0;
-    cell.contentLabel.preferredMaxLayoutWidth = LCD_W - 8 * 2;
+    cell.contentLabel.preferredMaxLayoutWidth = LCD_W - 16 * 3;
 
     [cell setLikeStyle:self.duanzi.like];
     [cell setDislikeStyle:self.duanzi.dislike];

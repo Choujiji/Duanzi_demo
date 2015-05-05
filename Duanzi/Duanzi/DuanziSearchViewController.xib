@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C2513" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DuanziSearchViewController">
@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" placeholder="搜段子，找灵感~~" translatesAutoresizingMaskIntoConstraints="NO" id="jOT-NA-Ovr">
+                <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" placeholder="搜段子，找灵感~~" translatesAutoresizingMaskIntoConstraints="NO" id="jOT-NA-Ovr">
                     <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="Q47-NP-2h6"/>
