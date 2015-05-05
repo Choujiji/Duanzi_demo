@@ -43,24 +43,55 @@
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, LCD_W, LCD_H)];
     self.window.backgroundColor = [UIColor whiteColor];
     
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: COLOR(209, 157, 0, 1)}];
+    
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitleTextAttributes:@{NSForegroundColorAttributeName: COLOR(209, 157, 0, 1)} forState:UIControlStateNormal];
+    
     self.tabBarController = [[UITabBarController alloc] init];
     
     
     DuanziListViewController *listVC = [[DuanziListViewController alloc] initWithNibName:@"DuanziListViewController" bundle:nil];
     UINavigationController *listNaviController = [[UINavigationController alloc] initWithRootViewController:listVC];
+    listNaviController.navigationBar.barTintColor = COLOR(253, 237, 216, 1);
+    listNaviController.navigationBar.tintColor = COLOR(209, 157, 0, 1);
     
     DuanziCreateViewController *createVC = [[DuanziCreateViewController alloc] initWithNibName:@"DuanziCreateViewController" bundle:nil];
     UINavigationController *createNaviController = [[UINavigationController alloc] initWithRootViewController:createVC];
+    createNaviController.navigationBar.barTintColor = COLOR(253, 237, 216, 1);
+    createNaviController.navigationBar.tintColor = COLOR(209, 157, 0, 1);
     
     DuanziSearchViewController *searchVC = [[DuanziSearchViewController alloc] initWithNibName:@"DuanziSearchViewController" bundle:nil];
     UINavigationController *searchNaviController = [[UINavigationController alloc] initWithRootViewController:searchVC];
+    searchNaviController.navigationBar.barTintColor = COLOR(253, 237, 216, 1);
+    searchNaviController.navigationBar.tintColor = COLOR(209, 157, 0, 1);
     
     DuanziSettingViewController *settingVC = [[DuanziSettingViewController alloc] initWithNibName:@"DuanziSettingViewController" bundle:nil];
     UINavigationController *settingNaviController = [[UINavigationController alloc] initWithRootViewController:settingVC];
+    settingNaviController.navigationBar.barTintColor = COLOR(253, 237, 216, 1);
+    settingNaviController.navigationBar.tintColor = COLOR(209, 157, 0, 1);
     
     [self.tabBarController setViewControllers:@[listNaviController, createNaviController, searchNaviController, settingNaviController]];
+
+    
+    NSArray *unSelectImageNameArray = @[@"DZ_TabbarItem_List_Unselect.png", @"DZ_TabbarItem_Write_Unselect.png", @"DZ_TabbarItem_Search_Unselect.png", @"DZ_TabbarItem_Setting_Unselect.png"];
+    
+    
+    [self.tabBarController.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem *tabBarItem, NSUInteger idx, BOOL *stop) {
+        
+        UIImage *unSelectImage = [UIImage imageNamed:unSelectImageNameArray[idx]];
+        [unSelectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        tabBarItem.image = unSelectImage;
+        
+        
+    }];
     
     self.window.rootViewController = self.tabBarController;
+
+    
+    [self.tabBarController.tabBar setTintColor:COLOR(209, 157, 0, 1)];
+    self.tabBarController.tabBar.barTintColor = COLOR(253, 237, 216, 1);
+    
     
     [self.window makeKeyAndVisible];
 

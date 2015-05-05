@@ -39,6 +39,14 @@
 		047E8A221AF81F3B0022F7C4 /* DZDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047E8A201AF81F3B0022F7C4 /* DZDetailViewController.xib */; };
 		047E8A261AF82FE30022F7C4 /* DZAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047E8A241AF82FE30022F7C4 /* DZAboutUsViewController.m */; };
 		047E8A271AF82FE30022F7C4 /* DZAboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047E8A251AF82FE30022F7C4 /* DZAboutUsViewController.xib */; };
+		0495FC661AF89A21006BB01A /* DZ_TabbarItem_List_Unselect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495FC5E1AF89A21006BB01A /* DZ_TabbarItem_List_Unselect@3x.png */; };
+		0495FC681AF89A21006BB01A /* DZ_TabbarItem_Search_Unselect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495FC601AF89A21006BB01A /* DZ_TabbarItem_Search_Unselect@3x.png */; };
+		0495FC6A1AF89A21006BB01A /* DZ_TabbarItem_Setting_Unselect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495FC621AF89A21006BB01A /* DZ_TabbarItem_Setting_Unselect@3x.png */; };
+		0495FC6C1AF89A21006BB01A /* DZ_TabbarItem_Write_Unselect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495FC641AF89A21006BB01A /* DZ_TabbarItem_Write_Unselect@3x.png */; };
+		0495FC711AF8A5F6006BB01A /* DZ_TabbarItem_List_Unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495FC6D1AF8A5F6006BB01A /* DZ_TabbarItem_List_Unselect@2x.png */; };
+		0495FC721AF8A5F6006BB01A /* DZ_TabbarItem_Search_Unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495FC6E1AF8A5F6006BB01A /* DZ_TabbarItem_Search_Unselect@2x.png */; };
+		0495FC731AF8A5F6006BB01A /* DZ_TabbarItem_Setting_Unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495FC6F1AF8A5F6006BB01A /* DZ_TabbarItem_Setting_Unselect@2x.png */; };
+		0495FC741AF8A5F6006BB01A /* DZ_TabbarItem_Write_Unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0495FC701AF8A5F6006BB01A /* DZ_TabbarItem_Write_Unselect@2x.png */; };
 		04CDBE261AF6CC08002664FA /* DZLoadResultTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDBE251AF6CC08002664FA /* DZLoadResultTableView.m */; };
 		56CE654260E6BBE0FEE1B8D5 /* libPods-Duanzi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC292B438B71C2CC0EE28854 /* libPods-Duanzi.a */; };
 /* End PBXBuildFile section */
@@ -107,6 +115,14 @@
 		047E8A231AF82FE30022F7C4 /* DZAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZAboutUsViewController.h; sourceTree = "<group>"; };
 		047E8A241AF82FE30022F7C4 /* DZAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZAboutUsViewController.m; sourceTree = "<group>"; };
 		047E8A251AF82FE30022F7C4 /* DZAboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZAboutUsViewController.xib; sourceTree = "<group>"; };
+		0495FC5E1AF89A21006BB01A /* DZ_TabbarItem_List_Unselect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DZ_TabbarItem_List_Unselect@3x.png"; sourceTree = "<group>"; };
+		0495FC601AF89A21006BB01A /* DZ_TabbarItem_Search_Unselect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DZ_TabbarItem_Search_Unselect@3x.png"; sourceTree = "<group>"; };
+		0495FC621AF89A21006BB01A /* DZ_TabbarItem_Setting_Unselect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DZ_TabbarItem_Setting_Unselect@3x.png"; sourceTree = "<group>"; };
+		0495FC641AF89A21006BB01A /* DZ_TabbarItem_Write_Unselect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DZ_TabbarItem_Write_Unselect@3x.png"; sourceTree = "<group>"; };
+		0495FC6D1AF8A5F6006BB01A /* DZ_TabbarItem_List_Unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DZ_TabbarItem_List_Unselect@2x.png"; sourceTree = "<group>"; };
+		0495FC6E1AF8A5F6006BB01A /* DZ_TabbarItem_Search_Unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DZ_TabbarItem_Search_Unselect@2x.png"; sourceTree = "<group>"; };
+		0495FC6F1AF8A5F6006BB01A /* DZ_TabbarItem_Setting_Unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DZ_TabbarItem_Setting_Unselect@2x.png"; sourceTree = "<group>"; };
+		0495FC701AF8A5F6006BB01A /* DZ_TabbarItem_Write_Unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DZ_TabbarItem_Write_Unselect@2x.png"; sourceTree = "<group>"; };
 		04CDBE241AF6CC08002664FA /* DZLoadResultTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZLoadResultTableView.h; sourceTree = "<group>"; };
 		04CDBE251AF6CC08002664FA /* DZLoadResultTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZLoadResultTableView.m; sourceTree = "<group>"; };
 		168AFDD26A13D0479A1F08B0 /* Pods-Duanzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duanzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Duanzi/Pods-Duanzi.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +183,7 @@
 				047A4ECF1AF03E58008CEFA4 /* LaunchScreen.xib */,
 				047A4EC01AF03E58008CEFA4 /* Supporting Files */,
 				047A4EE61AF03FB6008CEFA4 /* DuanziContent.json */,
+				0495FC4A1AF8987E006BB01A /* Source */,
 			);
 			path = Duanzi;
 			sourceTree = "<group>";
@@ -276,6 +293,21 @@
 			name = Setting;
 			sourceTree = "<group>";
 		};
+		0495FC4A1AF8987E006BB01A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0495FC6D1AF8A5F6006BB01A /* DZ_TabbarItem_List_Unselect@2x.png */,
+				0495FC6E1AF8A5F6006BB01A /* DZ_TabbarItem_Search_Unselect@2x.png */,
+				0495FC6F1AF8A5F6006BB01A /* DZ_TabbarItem_Setting_Unselect@2x.png */,
+				0495FC701AF8A5F6006BB01A /* DZ_TabbarItem_Write_Unselect@2x.png */,
+				0495FC5E1AF89A21006BB01A /* DZ_TabbarItem_List_Unselect@3x.png */,
+				0495FC601AF89A21006BB01A /* DZ_TabbarItem_Search_Unselect@3x.png */,
+				0495FC621AF89A21006BB01A /* DZ_TabbarItem_Setting_Unselect@3x.png */,
+				0495FC641AF89A21006BB01A /* DZ_TabbarItem_Write_Unselect@3x.png */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		9F899DA3C5EC597E15B8E8FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,15 +410,23 @@
 				047A4F2A1AF1B6ED008CEFA4 /* MyDuanziListViewController.xib in Resources */,
 				047A4F2F1AF1B71E008CEFA4 /* FavouriteDuanziListViewController.xib in Resources */,
 				047A4ED11AF03E58008CEFA4 /* LaunchScreen.xib in Resources */,
+				0495FC661AF89A21006BB01A /* DZ_TabbarItem_List_Unselect@3x.png in Resources */,
 				047A4ECE1AF03E58008CEFA4 /* Images.xcassets in Resources */,
 				047E8A271AF82FE30022F7C4 /* DZAboutUsViewController.xib in Resources */,
 				047A4F181AF10608008CEFA4 /* DefaultDuanziTableViewCell.xib in Resources */,
+				0495FC681AF89A21006BB01A /* DZ_TabbarItem_Search_Unselect@3x.png in Resources */,
+				0495FC6C1AF89A21006BB01A /* DZ_TabbarItem_Write_Unselect@3x.png in Resources */,
 				047A4EE71AF03FB6008CEFA4 /* DuanziContent.json in Resources */,
+				0495FC741AF8A5F6006BB01A /* DZ_TabbarItem_Write_Unselect@2x.png in Resources */,
 				047E8A221AF81F3B0022F7C4 /* DZDetailViewController.xib in Resources */,
 				047A4F021AF0D42A008CEFA4 /* DuanziListViewController.xib in Resources */,
+				0495FC721AF8A5F6006BB01A /* DZ_TabbarItem_Search_Unselect@2x.png in Resources */,
 				047A4F1D1AF10619008CEFA4 /* MyDuanziTableViewCell.xib in Resources */,
+				0495FC6A1AF89A21006BB01A /* DZ_TabbarItem_Setting_Unselect@3x.png in Resources */,
 				047A4F111AF0D474008CEFA4 /* DuanziSearchViewController.xib in Resources */,
+				0495FC711AF8A5F6006BB01A /* DZ_TabbarItem_List_Unselect@2x.png in Resources */,
 				047A4F071AF0D444008CEFA4 /* DuanziSettingViewController.xib in Resources */,
+				0495FC731AF8A5F6006BB01A /* DZ_TabbarItem_Setting_Unselect@2x.png in Resources */,
 				047A4F231AF115F4008CEFA4 /* SettingTableViewCell.xib in Resources */,
 				047A4F0C1AF0D45F008CEFA4 /* DuanziCreateViewController.xib in Resources */,
 			);
