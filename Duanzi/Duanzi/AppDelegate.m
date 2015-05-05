@@ -43,14 +43,13 @@
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, LCD_W, LCD_H)];
     self.window.backgroundColor = [UIColor whiteColor];
     
+    //navigationBar文字颜色
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: COLOR(209, 157, 0, 1)}];
-    
-    
-    [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitleTextAttributes:@{NSForegroundColorAttributeName: COLOR(209, 157, 0, 1)} forState:UIControlStateNormal];
     
     self.tabBarController = [[UITabBarController alloc] init];
     
     
+    //初始化viewController
     DuanziListViewController *listVC = [[DuanziListViewController alloc] initWithNibName:@"DuanziListViewController" bundle:nil];
     UINavigationController *listNaviController = [[UINavigationController alloc] initWithRootViewController:listVC];
     listNaviController.navigationBar.barTintColor = COLOR(253, 237, 216, 1);
@@ -74,9 +73,8 @@
     [self.tabBarController setViewControllers:@[listNaviController, createNaviController, searchNaviController, settingNaviController]];
 
     
+    //配置tabbar图标
     NSArray *unSelectImageNameArray = @[@"DZ_TabbarItem_List_Unselect.png", @"DZ_TabbarItem_Write_Unselect.png", @"DZ_TabbarItem_Search_Unselect.png", @"DZ_TabbarItem_Setting_Unselect.png"];
-    
-    
     [self.tabBarController.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem *tabBarItem, NSUInteger idx, BOOL *stop) {
         
         UIImage *unSelectImage = [UIImage imageNamed:unSelectImageNameArray[idx]];
@@ -86,13 +84,13 @@
         
     }];
     
-    self.window.rootViewController = self.tabBarController;
-
-    
+    //tabbar配色
     [self.tabBarController.tabBar setTintColor:COLOR(209, 157, 0, 1)];
     self.tabBarController.tabBar.barTintColor = COLOR(253, 237, 216, 1);
     
     
+    self.window.rootViewController = self.tabBarController;
+
     [self.window makeKeyAndVisible];
 
     

@@ -165,6 +165,16 @@
     if ([text isEqualToString:@"\n"])
     {
         [textView resignFirstResponder];
+        
+        if (textView.text.length == 0)
+        {
+            self.placeHolderLabel.hidden = NO;
+        }
+        else
+        {
+            self.placeHolderLabel.hidden = YES;
+        }
+        
         return NO;
     }
     

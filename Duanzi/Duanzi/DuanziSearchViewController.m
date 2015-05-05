@@ -87,6 +87,13 @@ typedef NS_ENUM(NSUInteger, DuanziSearchList_ShowType) {
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    id searchBarAppearance = [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil];
+    
+    [searchBarAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName: COLOR(209, 157, 0, 1)} forState:UIControlStateNormal];
+    [searchBarAppearance setTitle:@"搜索"];
+
+    
+    
     self.searchBar.delegate = self;
     
     //默认为热词搜素
