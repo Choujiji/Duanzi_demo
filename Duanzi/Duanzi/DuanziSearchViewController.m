@@ -222,7 +222,7 @@ typedef NS_ENUM(NSUInteger, DuanziSearchList_ShowType) {
     [duanziManager queryDuanziWithKeyString:searchBar.text completion:^(NSArray *resultArray) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
 
-        NSString *searchResult = [NSString stringWithFormat:@"共找到%ld个结果", resultArray.count];
+        NSString *searchResult = [NSString stringWithFormat:@"共找到%ld个结果", (unsigned long)resultArray.count];
         [self.tableView showLoadResultViewWithText:searchResult];
 
         if (resultArray.count > 0)
