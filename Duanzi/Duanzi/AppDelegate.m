@@ -39,6 +39,11 @@
         
         [defaults synchronize];
     }
+    else
+    {
+        [[DuanziContentLoader duanziLoader] loadNewDefaultData];
+    }
+    
     
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, LCD_W, LCD_H)];
     self.window.backgroundColor = [UIColor whiteColor];

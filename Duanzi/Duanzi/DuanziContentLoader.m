@@ -66,7 +66,7 @@ static DuanziContentLoader *instance = nil;
             
             
             //创建表
-            if (![db executeUpdate:@"CREATE TABLE IF NOT EXISTS Duanzi (ID integer PRIMARY KEY AUTOINCREMENT, Content text, Like boolean, Dislike boolean, Favourite boolean)"])
+            if (![db executeUpdate:@"CREATE TABLE IF NOT EXISTS Duanzi (ID integer PRIMARY KEY, Content text, Like boolean, Dislike boolean, Favourite boolean)"])
             {
                 NSLog(@"create table Duanzi error: %@", [db lastError]);
                 
@@ -78,9 +78,10 @@ static DuanziContentLoader *instance = nil;
             //插入所有数据
             NSArray *allContentArray = [DuanziContentLoader getDuanziContent];
             
-            for (NSString *duanzi in allContentArray)
+            for (NSDictionary *duanziDic in allContentArray)
             {
-                [db executeUpdate:@"INSERT INTO Duanzi VALUES (NULL, ?, ?, ?, ?)", duanzi, @NO, @NO, @NO];
+                
+                [db executeUpdate:@"INSERT INTO Duanzi VALUES (?, ?, ?, ?, ?)",[duanziDic allKeys][0], [duanziDic allValues][0], @NO, @NO, @NO];
             }
             
             //创建个人段子表
@@ -103,11 +104,59 @@ static DuanziContentLoader *instance = nil;
     NSData *contentData = [NSData dataWithContentsOfFile:contentPath];
     
     NSError *error = nil;
-    return [NSJSONSerialization JSONObjectWithData:contentData options:0 error:&error];
+    
+    NSArray *dataArray = [NSJSONSerialization JSONObjectWithData:contentData options:0 error:&error];
+    
+    NSMutableArray *resultDataArray = [NSMutableArray new];
+    [dataArray enumerateObjectsUsingBlock:^(NSString *content, NSUInteger idx, BOOL *stop){
+        
+        NSDictionary *dic = @{@(idx): content};
+        [resultDataArray addObject:dic];
+    }];
+    
+    return resultDataArray;
 }
 
 
 #pragma mark - 系统默认段子功能
+
+- (void)loadNewDefaultData
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        [self.queue inDatabase:^(FMDatabase *db) {
+            
+            [DuanziContentLoader getDuanziContent];
+            
+            //打开数据库
+            if (![db open])
+            {
+                NSLog(@"create db error!!");
+                
+                return;
+            }
+            
+            NSArray *allContentArray = [DuanziContentLoader getDuanziContent];
+            
+            NSUInteger count = [db intForQuery:@"SELECT COUNT(*) FROM Duanzi"];
+            
+            //有新数据
+            if (count < allContentArray.count)
+            {
+                //插入所有数据
+                
+                for (NSDictionary *duanziDic in allContentArray)
+                {
+                    
+                    [db executeUpdate:@"INSERT INTO Duanzi VALUES (?, ?, ?, ?, ?)",[duanziDic allKeys][0], [duanziDic allValues][0], @NO, @NO, @NO];
+                }
+            }
+            
+            [db close];
+        }];
+        
+    });
+}
 
 - (void)queryDuanziWithKeyString:(NSString *)keyString completion:(void(^)(NSArray *resultArray))completion
 {
