@@ -50,7 +50,7 @@
 - (UILabel *)loadResultView
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, LCD_W, 30)];
-    view.backgroundColor = [UIColor yellowColor];
+    view.backgroundColor = COLOR(251, 133, 36, 1);
     self.resultView = view;
     [self addSubview:view];
     
@@ -59,6 +59,7 @@
     label.adjustsFontSizeToFitWidth = YES;
     label.backgroundColor = [UIColor clearColor];
     label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
     [view addSubview:label];
     
     return label;
