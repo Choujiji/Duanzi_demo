@@ -282,7 +282,7 @@ typedef NS_ENUM(NSUInteger, DuanziSearchList_ShowType) {
     
     cell.contentLabel.text = duanzi.content;
     cell.contentLabel.numberOfLines = 0;
-    cell.contentLabel.preferredMaxLayoutWidth = LCD_W - 8 * 2;
+    cell.contentLabel.preferredMaxLayoutWidth = LCD_W - 16 * 3;
     
     [cell setLikeStyle:duanzi.like];
     [cell setDislikeStyle:duanzi.dislike];
@@ -451,6 +451,14 @@ typedef NS_ENUM(NSUInteger, DuanziSearchList_ShowType) {
             self.searchBar.text = self.searchHistoryArray[indexPath.row];
             [self searchBarSearchButtonClicked:self.searchBar];
         }
+    }
+    else if (self.listShowType == DuanziSearchList_SearchResult)
+    {
+        DZDetailViewController *detailVC = [[DZDetailViewController alloc] initWithDuanzi:self.searchResultDuanziArray[indexPath.row]];
+        
+        detailVC.hidesBottomBarWhenPushed = YES;
+        
+        [self.navigationController pushViewController:detailVC animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

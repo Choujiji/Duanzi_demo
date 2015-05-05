@@ -21,7 +21,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="fD4-Mc-ZcD" secondAttribute="bottom" id="4M9-UX-Dfp"/>
                 <constraint firstItem="fD4-Mc-ZcD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="RXc-9l-NyS"/>
