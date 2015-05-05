@@ -611,6 +611,7 @@
 			baseConfigurationReference = 516E66BD2CF3C7A805D936E2 /* Pods-Duanzi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = Duanzi/PrefixHeader.pch;
 				INFOPLIST_FILE = Duanzi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -624,6 +625,7 @@
 			baseConfigurationReference = 168AFDD26A13D0479A1F08B0 /* Pods-Duanzi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = Duanzi/PrefixHeader.pch;
 				INFOPLIST_FILE = Duanzi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
