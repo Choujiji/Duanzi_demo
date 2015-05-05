@@ -29,6 +29,11 @@
 #pragma mark - 系统默认段子功能
 
 /**
+ *  检查加载新数据
+ */
+- (void)loadNewDefaultData;
+
+/**
  *  使用关键字查询数据库
  *
  *  @param keyString  关键字（nil为返回所有数据）
